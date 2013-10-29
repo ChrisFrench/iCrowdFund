@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>Billets - Respond By Email</name>
+	<version>5.0.3-alpha</version>
+	<creationDate>April 2010</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLUGINDESC</description>
+	<files>
+		<filename plugin="respondbyemail">respondbyemail.php</filename>
+		<folder>respondbyemail</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_system_respondbyemail.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="basic">
+				<field name="default_category" type="text" size="10" default="" label="DEFAULT CATEGORY LABEL" description="DEFAULT CATEGORY DESC"/>
+				<field name="email_type" type="radio" default="0" label="EMAIL TYPE LABEL" description="EMAIL TYPE DESC">
+					<option value="0">IMAP</option>
+					<option value="1">POP3</option>
+					<option value="2">Gmail</option>
+				</field>
+				<field name="email_server" type="text" size="50" default="" label="SERVER ADDRESS LABEL" description="SERVER ADDRESS DESC" />
+				<field name="email_port" type="text" size="5" default="" label="SERVER PORT LABEL" description="SERVER PORT DESC" />
+				<field name="email_account_login" type="text" size="50" default="" label="EMAIL USERNAME LABEL" description="EMAIL USERNAME DESC" />
+				<field name="email_account_password" type="password" size="50" default="" label="EMAIL PASSWORD LABEL" description="EMAIL PASSWORD DESC" />
+				<field name="email_folder" type="text" size="50" default="INBOX" label="EMAIL FOLDER LABEL" description="EMAIL FOLDER DESC" />
+				<field name ="" type="spacer" />
+				<field name="use_ssl" type="radio" default="0" label="USE SSL LABEL" description="USE SSL DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="use_tls" type="radio" default="1" label="USE TLS LABEL" description="USE TLS DESC">
+					<option value="0">No</option>
+					<option value="1">Yes (if available)</option>
+					<option value="2">Yes (error if unavailable)</option>
+				</field>
+				<field name="validate_certs" type="radio" default="0" label="VALIDATE CERTS LABEL" description="VALIDATE CERTS DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name ="" type="spacer" />
+				<field name="delete_email_after_ticket_creation" type="radio" default="0" label="Delete Email After Ticket Creation" description="Delete Email After Ticket Creation">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="email_check_interval" type="text" size="5" default="10" label="CHECK INTERVAL LABEL" description="CHECK INTERVAL DESC"/>
+				<field name ="" type="spacer" />
+				<field name="create_tickets" type="radio" default="1" label="RECOGNIZED EMAILS LABEL" description="RECOGNIZED EMAILS DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="create_tickets_unrecognized" type="radio" default="0" label="UNRECOGNIZED EMAILS LABEL" description="UNRECOGNIZED EMAILS DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<params>
+		<param name="default_category" type="text" size="10" default="" label="DEFAULT CATEGORY LABEL" description="DEFAULT CATEGORY DESC"/>
+		<param name="email_type" type="radio" default="0" label="EMAIL TYPE LABEL" description="EMAIL TYPE DESC">
+			<option value="0">IMAP</option>
+			<option value="1">POP3</option>
+			<option value="2">Gmail</option>
+		</param>
+		<param name="email_server" type="text" size="50" default="" label="SERVER ADDRESS LABEL" description="SERVER ADDRESS DESC" />
+		<param name="email_port" type="text" size="5" default="" label="SERVER PORT LABEL" description="SERVER PORT DESC" />
+		<param name="email_account_login" type="text" size="50" default="" label="EMAIL USERNAME LABEL" description="EMAIL USERNAME DESC" />
+		<param name="email_account_password" type="password" size="50" default="" label="EMAIL PASSWORD LABEL" description="EMAIL PASSWORD DESC" />
+		<param name="email_folder" type="text" size="50" default="INBOX" label="EMAIL FOLDER LABEL" description="EMAIL FOLDER DESC" />
+		<param name ="" type="spacer" />
+		<param name="use_ssl" type="radio" default="0" label="USE SSL LABEL" description="USE SSL DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="use_tls" type="radio" default="1" label="USE TLS LABEL" description="USE TLS DESC">
+			<option value="0">No</option>
+			<option value="1">Yes (if available)</option>
+			<option value="2">Yes (error if unavailable)</option>
+		</param>
+		<param name="validate_certs" type="radio" default="0" label="VALIDATE CERTS LABEL" description="VALIDATE CERTS DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name ="" type="spacer" />
+		<param name="delete_email_after_ticket_creation" type="radio" default="0" label="Delete Email After Ticket Creation" description="Delete Email After Ticket Creation">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="email_check_interval" type="text" size="5" default="10" label="CHECK INTERVAL LABEL" description="CHECK INTERVAL DESC"/>
+		<param name ="" type="spacer" />
+		<param name="create_tickets" type="radio" default="1" label="RECOGNIZED EMAILS LABEL" description="RECOGNIZED EMAILS DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="create_tickets_unrecognized" type="radio" default="0" label="UNRECOGNIZED EMAILS LABEL" description="UNRECOGNIZED EMAILS DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+</install>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+    <event title="onAfterSaveProductComments">
+        <name>Leaving Comments on product</name>
+        <description>On Leaving Comments on Tienda Products.</description>
+        <uses_per_user>1</uses_per_user>
+        <auto_approve>1</auto_approve>
+        <value>5</value>
+    </event>
+
+	<event title="onAfterSaveOrders">
+        <name>doCompletedOrderTasks</name>
+        <description>doCompletedOrderTasks</description>
+        <uses_per_user>1</uses_per_user>
+        <auto_approve>1</auto_approve>
+        <value>5</value>
+    </event>
+</events>

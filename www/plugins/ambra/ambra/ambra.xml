@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="ambra" method="upgrade">
+	<name>Ambra</name>
+	<version>1.0.0</version>
+	<creationDate>February 2013</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2011 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>System Plugin for Ambra</description>
+	<files>
+		<filename plugin="ambra">ambra.php</filename>	
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_ambra.ini</language>
+	</languages>	
+</extension>

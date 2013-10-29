@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="tienda" method="upgrade">
+	<name>Tienda - Crowd Funding - All or Nothing Processing</name>
+	<version>0.10.0</version>
+	<creationDate>October 2011</creationDate>
+	<author>Dioscouri</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2012 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_TIENDA_CUSTOMFIELDS_PLUGINDESC</description>
+	<files>
+		<filename plugin="campaign_allornothing">campaign_allornothing.php</filename>
+		<folder>campaign_allornothing</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_tienda_crowdfunding.ini</language>
+	</languages>
+	
+</install>

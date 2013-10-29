@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+    <name>Ambra Points Logger</name>
+    <version>1.1.0</version>
+    <creationDate>July 2011</creationDate>
+    <author>Dioscouri Design</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <license>GNU General Public License v2</license>
+    <description>Enables Ambra Points logging for extensions without plugin events</description>
+    
+    <files>
+        <filename plugin="ambra_points">ambra_points.php</filename>
+        <folder>ambra_points</folder>
+    </files>
+
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_system_ambra_points.ini</language>
+    </languages>
+        
+</install>

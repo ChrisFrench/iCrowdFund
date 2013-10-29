@@ -1,0 +1,131 @@
+.icon-48-billets { 
+	background-image: url(../../../media/com_billets/images/billets.png); 
+	padding-left:160px !important;
+}
+
+/** toolbar icons **/
+.icon-32-savenew { 
+	background-image: url(../../../media/com_billets/images/icon-32-savenew.png); 
+}
+.icon-32-saveprev { 
+    background-image: url(../../../media/com_billets/images/icon-32-saveprev.png); 
+}
+.icon-32-savenext { 
+    background-image: url(../../../media/com_billets/images/icon-32-savenext.png); 
+}
+.icon-32-switch { 
+	background-image: url(../../../media/com_billets/images/switch.png); 
+}
+
+.icon-32-plugins { 
+	background-image: url(../../../media/com_billets/images/plugins.png); 
+}
+
+.icon-32-prev { 
+	background-image: url(../../../media/com_billets/images/icon-32-prev.png);
+	
+}
+
+.icon-32-next { 
+	background-image: url(../../../media/com_billets/images/icon-32-next.png); 
+}
+
+.icon-32-revert { 
+	background-image: url(../../../administrator/templates/khepri/images/toolbar/icon-32-revert.png); 
+}
+
+.icon-32-refresh { 
+	background-image: url(../../../administrator/templates/khepri/images/toolbar/icon-32-refresh.png); 
+}
+
+/** filter lines **/
+tr.filter div.range {
+	width: 100%;
+	text-align: left;
+}
+
+tr.filter div.range div.rangeline {
+	width: 100%;
+	white-space: nowrap;
+	padding-bottom: 2px;
+	text-align: right;
+}
+
+tr.filter div.range div.rangeline span.label {
+	text-align: left;
+}
+
+tr.filter div.range div.rangeline .input {
+	text-align: left;
+}
+
+/** common **/
+span.href {
+	cursor: pointer;
+	color: #0000FF;
+	text-decoration: none;
+	/* font-weight: bold; */
+}
+span.href:hover {
+	cursor: pointer;
+	color: #0000FF;
+	/* font-weight: bold; */
+	text-decoration: underline;	
+}
+
+/** notes **/
+.note 
+{
+	background-color: #FFFFDD;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: justify;
+	border: 1px solid #DDDDBB;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.note_pink 
+{
+	background-color: #FDE8FD;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: justify;
+	border: 1px solid #FFCCCC;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.note_green 
+{
+	background-color: #EBF6DF;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: justify;
+	border: 1px solid #289728;
+	border-spacing: 0px;
+	border-collapse: collapse;	
+}
+
+/** custom **/
+.label {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+/** J1.6+ fixes */
+form fieldset label {
+    clear: none !important;
+    margin: 5px 10px 5px 0px !important;
+    float: none !important;
+    display: inline;
+}
+
+form fieldset img, fieldset input {
+  float: none !important;
+  display: inline;
+}

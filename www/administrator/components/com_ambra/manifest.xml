@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>Ambra</name>
+    <version>1.1.0</version>
+    <creationDate>July 2011</creationDate>
+    <author>Dioscouri.com</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <copyrightHolder>Dioscouri.com</copyrightHolder>
+    <license>GNU General Public License v2</license>
+    <description>A User Manager for Joomla</description>
+
+    <!-- Application/site -->    
+    <files folder="site">
+        <file>ambra.php</file>
+        <file>controller.php</file>
+        <file>router.php</file>
+        <file>index.html</file>
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="languages/site">
+        <language tag="en-GB">/en-GB.com_ambra.ini</language>
+    </languages>
+    
+    <!-- Application/administrator -->
+    <administration>
+        <menu img="../media/com_ambra/images/ambra_16.png">Ambra</menu>
+
+        <files folder="admin">
+            <file>ambra.php</file>
+            <file>controller.php</file>
+            <file>defines.php</file>
+            <file>index.html</file>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>install</folder>
+            <folder>library</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="languages/admin">
+            <language tag="en-GB">/en-GB.com_ambra.ini</language>
+            <language tag="en-GB">/en-GB.com_ambra.sys.ini</language>
+            <language tag="en-GB">/en-GB.com_ambra.menu.ini</language>
+        </languages>
+    </administration>
+    
+    <!-- Installation -->
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install/install.sql</file>
+        </sql>
+    </install>
+    
+    <installfile>install.php</installfile>
+    <uninstallfile>uninstall.php</uninstallfile>
+
+    <!--  Media -->
+    <media destination="com_ambra" folder="media">
+        <folder>css</folder>
+        <folder>fusioncharts</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>scopes</folder>
+        <folder>menus</folder>
+    </media>
+        
+   <modules>
+        <!-- <module module="mod_whatever" publish="true" client="site"/> -->
+        <module module="modules/mod_ambra_coupons" client="site" position="left" />
+        <module module="modules/mod_ambra_top_points_earners" client="site" position="left" />
+        <module module="modules/mod_ambra_userstatistics" client="administrator" position="ambra_dashboard_right" publish="true" />
+        <module module="modules/mod_logged_ambra" client="administrator" position="left" />
+        <module module="modules/mod_login_ambra" client="site"  position="left" />
+        <module module="modules/mod_whoisonline_ambra" client="site"  position="left" />
+    </modules> 
+
+    <!-- Plugins -->
+    <plugins>
+        <!-- Sample: -->
+        <!-- Instructions: plugin="package_folder_containing_plugin_files" element="plugin_filename" -->
+        <!-- <plugin plugin="ambra_plugin_user" publish="true" group="user" element="ambra" /> -->
+        <plugin plugin="plugins/ambra_plugin_ambra" publish="true" group="ambra" element="ambra" />
+        <plugin plugin="plugins/ambra_plugin_amigos" publish="true" group="amigos" element="ambra" />
+        <plugin plugin="plugins/ambra_plugin_codegenerator" group="ambra" element="codegenerator" />
+        <plugin plugin="plugins/ambra_plugin_content" group="content" element="ambra" />
+        <plugin plugin="plugins/ambra_plugin_content_profileaccess" group="content" element="ambraprofile" />
+        <plugin plugin="plugins/ambra_plugin_points" publish="true" group="system" element="ambra_points" />
+        <!-- <plugin plugin="ambra_plugin_sendmessagescriba" publish="true" group="ambra" element="sendmessagescriba" /> -->
+        <plugin plugin="plugins/ambra_plugin_user" publish="true" group="user" element="ambra" />
+    </plugins>
+</install>

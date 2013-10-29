@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="billets" method="upgrade">
+	<name>Billets - Synchronize with external MSSQL</name>
+	<version>0.1.0</version>
+	<creationDate>December 2010</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_BILLETS_MSSQLEXPORT</description>
+	
+	<files>
+		<filename plugin="mssqlexport">mssqlexport.php</filename>
+		<folder>mssqlexport</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_billets_mssqlexport.ini</language>
+	</languages>
+	
+	<params>
+        <param name="odbcdriver" type="text"     label="ODBC connection" description="ODBC connection name" />
+        <param name="server"     type="text"     label="SQL Server"      description="MS SQL Server name or IP address" />     
+        <param name="user"       type="text"     label="Username"        description="Username" />   
+        <param name="password"   type="password" label="Password"        description="Password" />  
+        <param name="database"   type="text" 	 label="Database Name"   default="TWCustomers" description="Database Name" />  
+    </params>	
+</install>

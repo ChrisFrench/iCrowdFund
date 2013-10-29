@@ -1,0 +1,50 @@
+div.points_article
+{
+	border-bottom: thin solid #D8D8D8;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+div.top_earner_item
+{
+	float: left;
+	clear: both;
+	border-bottom: thin solid #D8D8D8;
+	width: 100%;
+	padding: 3px;
+	margin-bottom: 3px;
+}	
+
+div.top_earner_avatar
+{
+	float: left;
+	text-align: center;
+	padding: 2px;
+}
+
+div.top_earner_avatar img
+{
+	border: thin solid #D8D8D8;
+	max-width: 36px; 
+	padding: 2px;
+}
+
+div.top_earner_data
+{
+    float: left;
+}
+
+div.top_earner_name
+{
+    float: left;
+    font-weight: bold;
+}
+
+div.top_earner_points
+{
+    float: left;
+    clear: left;
+    color: #A4A4A4;
+    font-size: smaller;
+    font-weight: bold;
+}

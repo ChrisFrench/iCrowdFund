@@ -1,0 +1,105 @@
+.icon-48-ambra { 
+	background-image: url(../../../media/com_ambra/images/ambra.png); 
+	padding-left:200px !important;
+}
+
+/** toolbar icons **/
+.icon-32-savenew { 
+	background-image: url(../../../media/com_ambra/images/icon-32-savenew.png); 
+}
+
+.icon-32-switch { 
+	background-image: url(../../../media/com_ambra/images/switch.png); 
+}
+
+.icon-32-plugins { 
+	background-image: url(../../../media/com_ambra/images/plugins.png); 
+}
+
+.icon-32-required { 
+    background-image: url(../../../media/com_ambra/images/required.png); 
+}
+
+.icon-32-book_add { 
+    background-image: url(../../../media/com_ambra/images/book_add.png); 
+}
+
+.icon-32-book_remove { 
+    background-image: url(../../../media/com_ambra/images/book_remove.png); 
+}
+
+.icon-32-paste_remove { 
+    background-image: url(../../../media/com_ambra/images/paste_remove.png); 
+}
+
+/** filter lines **/
+tr.filterline div.range {
+    width: 100%;
+    text-align: left;
+}
+
+tr.filterline div.range div.rangeline {
+    width: 100%;
+    white-space: nowrap;
+    padding-bottom: 2px;
+    text-align: right;
+}
+
+tr.filterline div.range div.rangeline span.label {
+    text-align: left;
+}
+
+tr.filterline div.range div.rangeline .input {
+    text-align: left;
+}
+
+/** common **/
+span.href {
+    cursor: pointer;
+    color: #0000FF;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+span.href:hover {
+    cursor: pointer;
+    color: #0000FF;
+    /* font-weight: bold; */
+    text-decoration: underline;
+}
+
+td img {
+    vertical-align: middle;
+}
+
+/** notes **/
+.note,.note_pink,.note_green {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #DDDDBB;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.note {
+    background-color: #FFFFDD;
+}
+
+.note_pink {
+    background-color: #FDE8FD;
+}
+
+.note_green {
+    background-color: #EBF6DF;
+}
+
+/** related products **/
+span.relationship_relates {
+    color: green;
+}
+
+span.relationship_member {
+    color: darkorange;
+}

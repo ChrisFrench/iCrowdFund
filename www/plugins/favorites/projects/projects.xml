@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="favorites" method="upgrade">
+	<name>Favorites - Projects</name>
+	<version>1.0.0</version>
+	<creationDate>February 2013</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2011 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>Favorites Plugin for joining projects to items</description>
+	<files>
+		<filename plugin="projects">projects.php</filename>	
+	</files>
+</extension>

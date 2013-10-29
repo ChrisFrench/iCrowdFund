@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+    <name>User - CrowdFunding</name>
+    <version>0.10.1</version>
+    <creationDate>April 2013</creationDate>
+    <author>Lukas Polak</author>
+    <description>Deletes all products from user's cart if he's logging in having a product already in his cart</description>
+    
+    <files>
+        <filename plugin="crowdfunding">crowdfunding.php</filename>
+    </files>
+    <params>
+    </params>
+            
+</install>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="tienda" method="upgrade">
+	<name>AmbraUM Points Payments</name>
+	<version>0.7.2</version>
+	<creationDate>January 2011</creationDate>
+	<author>Dioscouri</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2012 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This plugin enables payments via AmbraUM points</description>
+	
+	<files>
+		<filename plugin="payment_ambrapoints">payment_ambrapoints.php</filename>
+		<folder>payment_ambrapoints</folder>	
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_tienda_payment_ambrapoints.ini</language>
+	</languages>
+
+	<params addpath="/administrator/components/com_tienda/elements">
+		<param name="exchange_rate" type="text" size="10" default="1" label="TIENDA AMBRAPOINTS PAYMENT EXSCHANGE RATE" description="TIENDA AMBRAPOINTS PAYMENT EXSCHANGE RATE DESC" />
+        <param type="spacer" />
+        <param name="articleid" type="text" size="10" default="" label="Tienda Ambrapoints Payment Article Number" description="Tienda Ambrapoints Payment Article Number Desc" /> 
+		<param name="display_article_title" type="radio" default="0" label="Tienda Ambrapoints Payment Display Article Title" description="Tienda Ambrapoints Payment Display Article Title Desc">
+  			<option value="0">COM_TIENDA_NO</option> 
+			<option value="1">COM_TIENDA_YES</option> 
+  		</param>
+        <param name="failed_order_state" type="tiendaorderstate" scope="com_tienda" default="10" label="Failed Order State" description="State to put the order in when the payment fails" />
+   		<param name="payment_received_order_state" type="tiendaorderstate" scope="com_tienda" default="17" label="Payment Received Order State" description="State to put the order in when the payment goes well" />
+	</params>
+			
+</install>

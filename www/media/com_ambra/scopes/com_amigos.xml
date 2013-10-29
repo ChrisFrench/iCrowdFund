@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+    <event title="onAfterSaveAccounts">
+        <name>Becoming an Affiliate</name>
+        <description>Users earn points for registering as affiliates</description>
+        <uses_per_user>1</uses_per_user>
+        <uses_per_user_per_day>1</uses_per_user_per_day>
+        <auto_approve>1</auto_approve>
+        <value>10</value>
+    </event>
+</events>

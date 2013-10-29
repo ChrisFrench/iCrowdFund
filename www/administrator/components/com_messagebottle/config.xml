@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+    <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_messagebottle" section="component">
+      <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+      <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+    </field>
+  </fieldset>
+  <fieldset name="default" label="COM_MESSAGEBOTTLE_GENERAL_SETTINGS" description="">
+    <field name="default_name" type="text" label="COM_MESSAGEBOTTLE_DEFAULT_NAME"   />
+    <field name="default_email" type="text" label="COM_MESSAGEBOTTLE_DEFAULT_EMAIL"  />
+    <field name="date_format" type="text" label="COM_MESSAGEBOTTLE_SET_DATE_FORMAT"  />
+    <field name="show_linkback" type="list" label="COM_MESSAGEBOTTLE_SHOW_LINKBACK"  >
+      <option value="0">JNO</option>
+      <option value="1">JYES</option>
+    </field>
+    <field name="include_site_css" type="list" label="COM_MESSAGEBOTTLE_INCLUDE_SITE_CSS"  >
+      <option value="0">JNO</option>
+      <option value="1">JYES</option>
+    </field>
+  </fieldset>
+  <fieldset name="cron" label="COM_MESSAGEBOTTLE_CRON_SETTINGS" description="">
+    <field name="key" type="text" label="COM_MESSAGEBOTTLE_DEFAULT_KEY" description="This API key is available for setting cron access"  />
+
+  </fieldset>
+  <fieldset name="mandrill" label="COM_MESSAGEBOTTLE_MANDRILL" description="COM_MESSAGEBOTTLE_MANDRILL_DESC">
+    <field name="md_host" type="text" label="COM_MESSAGEBOTTLE_MANDRILL_HOST" default="smtp.mandrillapp.com" />
+    <field name="md_port" type="text" label="COM_MESSAGEBOTTLE_MANDRILL_PORT" default="587"   />
+    <field name="md_smtp_username" type="text" label="COM_MESSAGEBOTTLE_MANDRILL_USERNAME"  />
+    <field name="md_smtp_api_key" type="text" label="COM_MESSAGEBOTTLE_MANDRILL_APIKEY"  />
+  </fieldset>
+</config>
+

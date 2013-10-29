@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site" method="upgrade">
+    <name>default</name>
+    <creationDate>March 2012</creationDate>
+    <author>Ammonite Networks</author>
+    <authorEmail>chris@ammonitenetworks.com</authorEmail>
+    <authorUrl>http://www.ammonitenetworks.com</authorUrl>
+    <copyright>Ammonite Networks</copyright>
+    <license>GNU/GPL version 2</license>
+    <description>Default Template</description>
+    <version>0.1.0</version>
+
+    <files>
+        
+        <filename>params.ini</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>error.php</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>errorpages</folder>
+        <folder>fonts</folder>
+        <folder>helpers</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>includes</folder>
+        <folder>js</folder>
+        <folder>layouts</folder>
+    </files>
+
+    <positions>
+        <position>top-navigation</position>
+        <position>primary-navigation</position>
+        <position>right-navigation</position>
+        <position>secondary-navigation</position>
+        <position>footer-navigation</position>
+        
+        <position>search</position>
+        <position>breadcrumb</position>
+        
+         <position>banner</position>
+         <position>featuredProject</position>
+         
+        <position>above</position>
+        <position>below</position>
+        <position>left</position>
+        <position>right</position>
+        
+        <position>component-above</position>
+        <position>component-below</position>
+        <position>component-left</position>
+        <position>component-right</position>
+
+        <position>footer1</position>
+        <position>footer2</position>
+        <position>footer3</position>
+        <position>footer4</position>
+        <position>campaigns_social</position>
+        <position>campaigns_right_top</position>
+        <position>campaigns_right_bottom</position>
+    </positions>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="pagetitle_suffix" type="text" default="" label="Page Title Suffix" description="This will be added to the end of every pagetitle on your site, after a |.  Typically this will be your webite's name." size="70" />
+                <field name="generator" type="text" default="" label="Generator Metatag Text" description="This is the html 'generator' metatag.  Just use your site's name." size="70" />
+                <field name="layout" type="filelist" default="default.php" label="Select a Layout" description="" directory="templates/default/layouts/" filter="\.php" exclude="" stripext="" />
+	            <field name="display_component" type="radio" default="1" label="Display Component?" description="Should the component output be displayed?">
+	                <option value="0">No</option>
+	                <option value="1">Yes</option>
+	            </field>
+                <field name="display_pagetitle" type="radio" default="1" label="Display Page Title?" description="Should the page title be displayed within this template-layout?">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    
+</extension>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="WePay Create Account">
+		<message>
+			<![CDATA[WEPAY CREATE ACCOUNT]]>
+		</message>
+	</layout>
+	<state>
+		<name>WEPAY CREATE ACCOUNT</name>
+		<description>WEPAY CREATE ACCOUNT</description>
+
+	</state>
+</metadata>

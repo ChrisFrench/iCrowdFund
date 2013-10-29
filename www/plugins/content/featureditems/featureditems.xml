@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Featured Items</name>
+	<version>0.1.0</version>
+	<creationDate>June 2011</creationDate>
+	<author>Dioscouri</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>Shows featured items in a content article. 
+	Usage: {featureditems id=1 layout=large} or
+    Usage: {featureditems ids=1,2,3 layout=large}  
+    Layout Options: small, medium, large
+	</description>
+	
+	<files>
+		<filename plugin="featureditems">featureditems.php</filename>
+        <folder>featureditems</folder>
+	</files>
+
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_content_featureditems.ini</language>
+    </languages>
+			
+</install>

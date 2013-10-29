@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AMBRA_AUTO_LOGOUT_LAYOUT">
+		<message>
+			<![CDATA[COM_AMBRA_AUTO_LOGOUT_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<state><fields name="params">
+		<fieldset name="basic options" label="Basic Options">
+			<field name="logout_redirect" type="menuitem" disable="separator" label="Log Out Redirect Page" description="Choose the menu item you want to go to after logging out" />
+		</fieldset>
+	</fields>
+        <fields name="request">
+            <fieldset name="request">
+                <field name="task" type="hidden" default="autologout"/>
+            </fieldset>
+          
+        </fields>
+        
+    </state>
+</metadata>

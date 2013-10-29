@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" position="left" method="upgrade" client="site">
+    <name>Featured Items</name>
+    <author>Dioscouri Design</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <version>0.1.0</version>
+    <creationDate>April 2012</creationDate>
+    <copyright>2012 Dioscouri.com</copyright>
+    <license>GNU General Public License</license>
+    <description>Displays featured items</description>
+    
+    <files>
+        <filename module="mod_featureditems_items">mod_featureditems_items.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>media</folder>
+    </files>
+    
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_featureditems_items.ini</language>
+    </languages>
+
+    <!-- Joomla 1.6+ only -->
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="ids" type="text" default="" label="IDs" description="A list of ID numbers for the featured items to display, each one separated by a comma. If left blank, module selects the featured items based on ordering and publication rules." size="35" />
+                <field name="limit" type="text" default="1" label="Items" description="The number of items to display" size="15" />
+                <field name="categories" type="textarea" default="" label="Categories" description="A list of categories to filter by, each one separated by a comma. If left blank, no category filter will be applied." rows="5" cols="35" />
+                <field name="labels" type="textarea" default="" label="Labels" description="A list of labels to filter by, each one separated by a comma. If left blank, no label filter will be applied." rows="5" cols="35" />
+            </fieldset>
+            <fieldset name="mod_featureditems_slideshow">
+                <field
+                    name="slideshow_transition"
+                    type="list"
+                    default="fade"
+                    label="MOD_FEATUREDITEMS_TRANSITION"
+                    description="MOD_FEATUREDITEMS_TRANSITION_DESC">
+                    <option
+                        value="fade">MOD_FEATUREDITEMS_TRANSITION_FADE</option>
+                    <option
+                        value="left">MOD_FEATUREDITEMS_TRANSITION_LEFT</option>
+                    <option
+                        value="down">MOD_FEATUREDITEMS_TRANSITION_DOWN</option>
+                </field>
+                <field name="slideshow_duration" type="text" default="1000" label="MOD_FEATUREDITEMS_DURATION" description="MOD_FEATUREDITEMS_DURATION_DESC" size="10" />
+                <field name="slideshow_start" type="text" default="0" label="MOD_FEATUREDITEMS_STARTING_SLIDE" description="MOD_FEATUREDITEMS_STARTING_SLIDE_DESC" size="10" />
+                <field name="slideshow_autoplay" type="radio" default="1" label="MOD_FEATUREDITEMS_AUTOPLAY" description="">
+                  <option value="1">JYES</option>
+                  <option value="0">JNO</option>
+                </field>
+                <field name="slideshow_autoplayinterval" type="text" default="6000" label="MOD_FEATUREDITEMS_AUTOPLAY_INTERVAL" description="MOD_FEATUREDITEMS_AUTOPLAY_INTERVAL_DESC" size="15" />
+                <field name="slideshow_autoplaystoponclick" type="radio" default="1" label="MOD_FEATUREDITEMS_AUTOPLAY_STOP_ON_CLICK" description="MOD_FEATUREDITEMS_AUTOPLAY_STOP_ON_CLICK_DESC">
+                  <option value="1">JYES</option>
+                  <option value="0">JNO</option>
+                </field>
+                <field name="slideshow_hidecontrols" type="radio" default="0" label="MOD_FEATUREDITEMS_HIDECONTROLS" description="">
+                  <option value="1">JYES</option>
+                  <option value="0">JNO</option>
+                </field>
+                <field name="slideshow_insertcontrols" type="radio" default="1" label="MOD_FEATUREDITEMS_INSERTCONTROLS" description="MOD_FEATUREDITEMS_INSERTCONTROLS_DESC">
+                  <option value="1">JYES</option>
+                  <option value="0">JNO</option>
+                </field>
+                <field name="slideshow_loop" type="radio" default="1" label="MOD_FEATUREDITEMS_LOOP" description="">
+                  <option value="1">JYES</option>
+                  <option value="0">JNO</option>
+                </field>
+                
+                <field name="slideshow_container_width" type="text" default="960" label="MOD_FEATUREDITEMS_CONTAINER_WIDTH" description="MOD_FEATUREDITEMS_CONTAINER_WIDTH_DESC" size="10" />
+                <field name="slideshow_container_height" type="text" default="450" label="MOD_FEATUREDITEMS_CONTAINER_HEIGHT" description="MOD_FEATUREDITEMS_CONTAINER_HEIGHT_DESC" size="10" />
+                <field name="slideshow_slide_width" type="text" default="960" label="MOD_FEATUREDITEMS_SLIDE_WIDTH" description="MOD_FEATUREDITEMS_SLIDE_WIDTH_DESC" size="10" />
+                <field name="slideshow_slide_height" type="text" default="450" label="MOD_FEATUREDITEMS_SLIDE_HEIGHT" description="MOD_FEATUREDITEMS_SLIDE_HEIGHT_DESC" size="10" />
+                
+            </fieldset>
+            <fieldset
+                name="advanced">
+
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    
+    <!-- Joomla 1.5 only -->
+    <params>
+        <param name="ids" type="text" default="" label="IDs" description="A list of ID numbers for the featured items to display, each one separated by a comma. If left blank, module selects the featured items based on ordering and publication rules." size="35" />
+        <param name="limit" type="text" default="1" label="Items" description="The number of items to display" size="15" />
+        <param name="layout" type="filelist" default="default" directory="modules/mod_featureditems_items/tmpl" stripext="true" label="Layout" description="Select a Layout" />
+    </params>
+    
+</install>

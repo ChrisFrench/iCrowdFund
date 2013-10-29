@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+    <name>Ambra User Plugin</name>
+    <version>1.1.0</version>
+    <creationDate>July 2011</creationDate>
+    <author>Dioscouri Design</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <license>GNU General Public License v2</license>
+    <description>Enables Ambra User plugin events</description>
+
+    <files>
+        <filename plugin="ambra">ambra.php</filename>
+    </files>
+
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_user_ambra.ini</language>
+    </languages>
+
+    <params addpath="/administrator/components/com_ambra/elements">
+		<param name="profile" type="ambraprofile" default="" label="Default Profile Type" description="Default Profile Type Desc" />
+
+    </params>
+</install>

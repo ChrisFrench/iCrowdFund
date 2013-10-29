@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Stats for a Campaign">
+		<message>
+			<![CDATA[Stats for a Campaign for a user. ]]>
+		</message>
+	</layout>
+	<!-- Joomla 1.6+ only -->
+	<fields name="request">
+	</fields>
+	<!-- Joomla 1.5 only -->
+</metadata>

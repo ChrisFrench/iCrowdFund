@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+	<name>Search - Campaigns</name>
+	<version>0.10.0</version>
+	<creationDate>October 2011</creationDate>
+	<author>Ammonite Networks</author>
+	<authorEmail>chris@ammonitenetworks.com</authorEmail>
+	<authorUrl>http://ammonitenetworks.com</authorUrl>
+	<copyright>2012 ammonitenetworks.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>COM_TIENDA_ENABLES_SEARCHING_TIENDA_PRODUCTS_AND_CATEGORIES_IN_CORE_SEARCH_COMPONENT</description>
+	<files>
+		<filename plugin="campaigns">campaigns.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="basic">
+				<field name="title" type="text" size="50" default="Tienda" label="Title" description="Category Title"/>
+				<field name="density_flag" type="radio" default="1" label="Keyward Dense" description="">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="link_behaviour" type="radio" default="1" label="Link " description="">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

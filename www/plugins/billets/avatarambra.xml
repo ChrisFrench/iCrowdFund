@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="billets" method="upgrade">
+	<name>Billets - Avatar (AMBRA)</name>
+	<version>5.0.3-alpha</version>
+	<creationDate>April 2010</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_BILLETS_AVATARAMBRA</description>
+	<files>
+		<filename plugin="avatarambra">avatarambra.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_billets_avatarambra.ini</language>
+	</languages>
+	<params>
+		<param name="link_to_profile"
+		type="radio"
+		default="1"
+		label="Link to Profile"
+		description="Link to Profile">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="basic">
+				<field name="link_to_profile"
+				type="radio"
+				default="1"
+				label="Link to Profile"
+				description="Link to Profile">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

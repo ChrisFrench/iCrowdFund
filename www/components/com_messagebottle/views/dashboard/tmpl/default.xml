@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="MESSAGEBOTTLE DASHBOARD DEFAULT LAYOUT">
+		<message>
+			<![CDATA[MESSAGEBOTTLE DASHBOARD DEFAULT LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>MESSAGEBOTTLE DASHBOARD DEFAULT LAYOUT</name>
+		<description>MESSAGEBOTTLE DASHBOARD DEFAULT LAYOUT DESC</description>
+        <!--
+        <url addpath="/administrator/components/com_messagebottle/elements">
+            <param name="filter_group" type="messagebottlegroup" section="com_messagebottle" default="" label="Select Group" description="A Tag Group" />
+            <param name="task" type="hidden" section="com_messagebottle" default="view" />
+        </url>
+        -->
+	</state>
+</metadata>

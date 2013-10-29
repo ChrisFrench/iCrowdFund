@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu>
+   <link>
+       <name>Dashboard</name>
+       <url>index.php?option=com_tos&#38;view=dashboard</url>
+   </link>
+    <link>
+       <name>Terms</name>
+       <url>index.php?option=com_tos&#38;view=terms</url>
+   </link>
+    <link>
+       <name>Scopes</name>
+       <url>index.php?option=com_tos&#38;view=scopes</url>
+   </link>
+    <link>
+       <name>Accepts</name>
+       <url>index.php?option=com_tos&#38;view=accepts</url>
+   </link>
+   <link>
+       <name>Configuration</name>
+       <url>index.php?option=com_tos&#38;view=config</url>
+   </link>
+</menu>

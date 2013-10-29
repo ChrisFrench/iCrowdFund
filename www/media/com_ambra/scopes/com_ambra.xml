@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+    <event title="onAfterUploadAvatar">
+        <name>Uploading an Avatar</name>
+        <description>Users earn points after uploading an avatar</description>
+        <uses_per_user>1</uses_per_user>
+        <auto_approve>1</auto_approve>
+        <value>5</value>
+    </event>
+</events>
+

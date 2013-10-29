@@ -1,0 +1,1 @@
+<div><div><img src="<?php echo JURI::base(); ?>templates/default/images/logo.png"></div>

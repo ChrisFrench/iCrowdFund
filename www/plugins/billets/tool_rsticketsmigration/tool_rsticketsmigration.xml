@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="billets" method="upgrade">
+	<name>Tool - RSTickets Migration</name>
+	<version>5.0.3-alpha</version>
+	<creationDate>August 2010</creationDate>
+	<author>Dioscouri</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This tool migrates data from RSTickets to Billets</description>
+	<files>
+		<filename plugin="tool_rsticketsmigration">tool_rsticketsmigration.php</filename>
+		<folder>tool_rsticketsmigration</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_billets_tool_rsticketsmigration.ini</language>
+	</languages>
+	<params></params>
+	<config>
+		<fields name="params"></fields>
+	</config>
+</install>

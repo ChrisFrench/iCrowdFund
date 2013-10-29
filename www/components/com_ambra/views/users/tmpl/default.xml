@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AMBRA_USER_LAYOUT">
+		<message>
+			<![CDATA[COM_AMBRA_USER_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_ambra/elements">
+			<field name="id" type="ambrauser" section="com_ambra" default="" label="User" description="Leave blank and it will select the actively logged in user. " />
+			<field name="task" type="hidden" default="profile"/>
+		</fieldset>
+	</fields>
+</metadata>

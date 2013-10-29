@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>Extendform</name>
+    <version>0.9.0</version>
+    <creationDate>June 2012</creationDate>
+    <author>Dioscouri</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2012 Dioscouri.com</copyright>
+    <copyrightHolder>Dioscouri.com</copyrightHolder>
+    <license>GNU General Public License v2</license>
+    <description>COM_SAMPLE_DESC</description>
+
+    <!-- Application/site -->    
+    <files folder="site">
+        <file>extendform.php</file>
+        <file>controller.php</file>
+        <file>router.php</file>
+        <file>index.html</file>
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="languages/site">
+        <language tag="en-GB">en-GB.com_extendform.ini</language>
+    </languages>
+    
+    <!-- Application/administrator -->
+    <administration>
+        <menu img="../media/com_extendform/images/extendform_16.png">COM_SAMPLE</menu>
+
+        <files folder="admin">
+            <file>extendform.php</file>
+            <file>controller.php</file>
+            <file>defines.php</file>
+            <file>index.html</file>
+            <folder>controllers</folder>
+            <folder>elements</folder>
+            <folder>helpers</folder>
+            <folder>install</folder>
+            <folder>library</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="languages/admin">
+            <language tag="en-GB">en-GB.com_extendform.ini</language>
+            <language tag="en-GB">en-GB.com_extendform.sys.ini</language>
+            <language tag="en-GB">en-GB.com_extendform.menu.ini</language>
+        </languages>
+    </administration>
+    
+    <!-- Installation -->
+    <install>
+        <sql>
+            <file>install.sql</file>
+        </sql>
+    </install>
+    
+    <installfile>install.php</installfile>
+    <uninstallfile>uninstall.php</uninstallfile>
+
+    <!--  Media -->
+    <media destination="com_extendform" folder="media">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>menus</folder>
+        <folder>forms</folder>
+        <file>index.html</file>
+    </media>
+        
+    <!-- Modules -->    
+    <modules>
+        <!-- <module module="mod_whatever" publish="true" client="site"/> -->
+    </modules> 
+
+    <!-- Plugins -->
+    <plugins>
+        <!-- Extendform: -->
+
+        <!-- Instructions: <plugin plugin="package_folder_containing_plugin_files" element="plugin_filename" publish="true" group="content" /> -->
+    <plugin plugin="plugins/extendform" element="extendform" publish="true" group="system" />
+        
+    </plugins>
+</install>

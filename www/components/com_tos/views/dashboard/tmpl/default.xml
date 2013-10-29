@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="TOS DASHBOARD DEFAULT LAYOUT">
+		<message>
+			<![CDATA[TOS DASHBOARD DEFAULT LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>TOS DASHBOARD DEFAULT LAYOUT</name>
+		<description>TOS DASHBOARD DEFAULT LAYOUT DESC</description>
+        <!--
+        <url addpath="/administrator/components/com_tos/elements">
+            <param name="filter_group" type="tosgroup" section="com_tos" default="" label="Select Group" description="A Tag Group" />
+            <param name="task" type="hidden" section="com_tos" default="view" />
+        </url>
+        -->
+	</state>
+</metadata>

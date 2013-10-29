@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu>
+   <link>
+       <name>Dashboard</name>
+       <url>index.php?option=com_extendform&#38;view=dashboard</url>
+   </link>
+   <link>
+       <name>Forms</name>
+       <url>index.php?option=com_extendform&#38;view=forms</url>
+   </link>
+   <link>
+       <name>Configuration</name>
+       <url>index.php?option=com_extendform&#38;view=config</url>
+   </link>
+</menu>

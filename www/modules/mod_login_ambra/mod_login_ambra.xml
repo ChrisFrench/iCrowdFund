@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>Login Form</name>
+    <version>1.1.0</version>
+    <creationDate>July 2011</creationDate>
+    <author>Dioscouri.com</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <license>GNU General Public License</license>
+    <description>MODULEDESC</description>
+
+    <files>
+        <filename module="mod_login_ambra">mod_login_ambra.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_login_ambra.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+		</field>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<field name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="PARAMPRETEXT" />
+		<field name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="PARAMPOSTTEXT" />
+		<field name="return_login" type="menuitem" default="" disable="separator" label="Login Redirection URL" description="PARAMLOGINREDIRECTURL" />
+		<field name="return_logout" type="menuitem" default="" disable="separator" label="Logout Redirection URL" description="PARAMLOGOUTREDIRECTURL" />
+		<field name="greeting" type="radio" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="name" type="list" default="0" label="Name/Username">
+			<option value="0">Username</option>
+			<option value="1">Name</option>
+		</field>
+		<field name="usesecure" type="radio" default="0" label="Encrypt Login Form" description="Submit encrypted login data (requires SSL)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" />
+		<field name="display_null" type="radio" default="0" label="Display When Logged In" description="Display When Logged In Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

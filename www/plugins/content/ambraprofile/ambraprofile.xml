@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Restrict Content to Ambra Profiles</name>
+	<version>1.1.0</version>
+	<creationDate>July 2011</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2011 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This plugin will hide or display portions of content depending on the users Ambra profile</description>
+	
+	<files>
+		<filename plugin="ambraprofile">ambraprofile.php</filename>	
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_content_ambraprofile.ini</language>
+	</languages>
+		
+</install>

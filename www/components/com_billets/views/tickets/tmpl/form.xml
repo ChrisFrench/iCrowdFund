@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="BILLETS_TICKETS_FORM_LAYOUT">
+		<message>
+			<![CDATA[BILLETS_TICKETS_FORM_LAYOUT_DESC]]>
+		</message>
+	</layout>
+    
+    <!-- Joomla 1.6+ only -->
+    <fields name="request">
+        <fieldset name="request">
+            <field name="task" type="hidden" default="add" />
+        </fieldset>
+    </fields>
+    
+    <!-- Joomla 1.5 only -->
+	<state>
+		<name>BILLETS_TICKETS_FORM_LAYOUT</name>
+		<description>BILLETS_TICKETS_FORM_LAYOUT_DESC</description>
+        <url>
+            <param name="task" type="hidden" default="add" />
+        </url>
+	</state>
+</metadata>

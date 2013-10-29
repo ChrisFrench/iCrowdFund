@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Campaign Layout">
+		<message>
+			<![CDATA[]]>
+		</message>
+	</layout>
+	<!-- Joomla 1.6+ only -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_tienda/elements">
+			<field name="filter_category" type="campaigncategory" section="com_tienda" default="" label="Campaign" description="Campaign ID" />
+		</fieldset>
+	</fields>
+	<!-- Joomla 1.5 only -->
+</metadata>

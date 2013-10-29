@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>Billets</name>
+    <version>5.0.3-alpha</version>
+    <creationDate>August 2011</creationDate>
+    <author>Dioscouri.com</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <copyrightHolder>Dioscouri.com</copyrightHolder>
+    <license>GNU General Public License v2</license>
+    <description>COM_BILLETS_BILLETS_DESC</description>
+
+	<!-- Application/site -->	
+	<files folder="site">
+		<file>billets.php</file>
+		<file>controller.php</file>
+		<file>index.html</file>
+		<file>router.php</file>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="languages/site">
+		<language tag="en-GB">/en-GB.com_billets.ini</language>
+	</languages>
+	
+	<!-- Application/administrator -->
+	<administration>
+		<menu img="../media/com_billets/images/billets_16.png">COM_BILLETS</menu>
+
+		<files folder="admin">
+			<file>billets.php</file>
+			<file>controller.php</file>
+			<file>defines.php</file>
+			<file>index.html</file>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>library</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="languages/admin">
+			<language tag="en-GB">/en-GB.com_billets.ini</language>
+			<language tag="en-GB">/en-GB.com_billets.sys.ini</language>
+			<language tag="en-GB">/en-GB.com_billets.menu.ini</language>
+		</languages>
+		
+		
+	</administration>
+	
+	<!-- Installation -->
+	<install>
+		<sql>
+			<file>install.sql</file>
+		</sql>
+	</install>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+
+	<!--  Media -->
+	<media destination="com_billets" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fusioncharts</folder>
+		<folder>libchart</folder>
+		<folder>menus</folder>
+	</media>
+		
+	<!-- Modules -->	
+	<modules>
+		<!-- <module module="mod_whatever" publish="false" client="site"/> -->
+		<module module="modules/mod_billets_open" client="site" publish="false" />
+	</modules> 
+
+	<!-- Plugins -->
+	<plugins>
+		<!-- SAMPLE
+		<plugin plugin="billets_plugin_system" publish="false" group="system" element="filename"/> 
+		-->
+		<plugin plugin="plugins/billets_plugin_ambrasubs" group="billets" publish="false" element="ambrasubs" />
+		<plugin plugin="plugins/billets_plugin_avatarambra" group="billets" publish="false" element="avatarambra" />
+		<plugin plugin="plugins/billets_plugin_avatarcb" group="billets" publish="false" element="avatarcb" />
+		<plugin plugin="plugins/billets_plugin_avatarfb" group="billets" publish="false" element="avatarfb" />
+        <plugin plugin="plugins/billets_plugin_avatarjomsocial" group="billets" publish="false" element="avatarjomsocial" />
+		<plugin plugin="plugins/billets_plugin_categoryfilterbyacl" group="billets" publish="true" element="categoryfilterbyacl" />
+		<plugin plugin="plugins/billets_plugin_emails" group="billets" publish="false" element="emails" />
+		<plugin plugin="plugins/billets_plugin_feedbackhistory" group="billets" publish="true" element="feedbackhistory" />
+		<plugin plugin="plugins/billets_plugin_managerfromjoomlaacl" group="user" publish="false" element="billetsmanagerfromjoomlaacl" />
+        <plugin plugin="plugins/billets_plugin_respondbyemail" group="system" publish="false" element="respondbyemail" />
+        <plugin plugin="plugins/billets_plugin_tool_rsticketsmigration" group="billets" publish="true" element="tool_rsticketsmigration" />
+        <plugin plugin="plugins/billets_plugin_userticketsonjomsocial" group="community" publish="false" element="billets" />       
+	</plugins> 		
+</install>

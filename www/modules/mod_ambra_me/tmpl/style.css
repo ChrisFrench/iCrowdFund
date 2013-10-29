@@ -1,0 +1,23 @@
+.navbar .nav > li > a.me-menu { padding: 10px; }
+
+.navbar .nav > li.me-menu {
+	border-left:1px solid #000;
+}
+.me-menu-image {
+	height:30px;
+}
+.me-menu-image img{
+	height:30px;
+	max-height: 30px;
+	max-width: 45px;
+	border: 1px solid #000;
+}
+.me-menu-title { 
+	height:30px;
+	margin-left:10px;
+	padding-top:5px;
+
+	 }
+ul.me-menu {
+	padding:0 !important;
+}

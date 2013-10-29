@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="FEATUREDITEMS DASHBOARD DEFAULT LAYOUT">
+		<message>
+			<![CDATA[FEATUREDITEMS DASHBOARD DEFAULT LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>FEATUREDITEMS DASHBOARD DEFAULT LAYOUT</name>
+		<description>FEATUREDITEMS DASHBOARD DEFAULT LAYOUT DESC</description>
+        <!--
+        <url addpath="/administrator/components/com_featureditems/elements">
+            <param name="filter_group" type="featureditemsgroup" section="com_featureditems" default="" label="Select Group" description="A Tag Group" />
+            <param name="task" type="hidden" section="com_featureditems" default="view" />
+        </url>
+        -->
+	</state>
+</metadata>

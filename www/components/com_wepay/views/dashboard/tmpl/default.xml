@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="WEPAY DASHBOARD DEFAULT LAYOUT">
+		<message>
+			<![CDATA[WEPAY DASHBOARD DEFAULT LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>WEPAY DASHBOARD DEFAULT LAYOUT</name>
+		<description>WEPAY DASHBOARD DEFAULT LAYOUT DESC</description>
+        <!--
+        <url addpath="/administrator/components/com_wepay/elements">
+            <param name="filter_group" type="wepaygroup" section="com_wepay" default="" label="Select Group" description="A Tag Group" />
+            <param name="task" type="hidden" section="com_wepay" default="view" />
+        </url>
+        -->
+	</state>
+</metadata>

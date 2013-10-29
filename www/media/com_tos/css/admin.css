@@ -1,0 +1,27 @@
+/** toolbar icons **/
+.icon-48-tos { 
+	background-image: url(../../../media/com_tos/images/tos.png); 
+	padding-left:252px !important;
+}
+.icon-32-savenew { 
+	background-image: url(../../../media/com_tos/images/icon-32-savenew.png); 
+}
+.icon-32-saveprev { 
+    background-image: url(../../../media/com_tos/images/icon-32-saveprev.png); 
+}
+.icon-32-savenext { 
+    background-image: url(../../../media/com_tos/images/icon-32-savenext.png); 
+}
+.icon-32-prev { 
+    background-image: url(../../../media/com_tos/images/icon-32-prev.png); 
+}
+.icon-32-next { 
+    background-image: url(../../../media/com_tos/images/icon-32-next.png); 
+}
+.icon-32-revert { 
+	background-image: url(../../../administrator/templates/khepri/images/toolbar/icon-32-revert.png); 
+}
+.icon-32-refresh { 
+	background-image: url(../../../administrator/templates/khepri/images/toolbar/icon-32-refresh.png); 
+}
+

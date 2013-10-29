@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="authentication" method="upgrade">
+	<name>Ambra - TrialWorks Login</name>
+	<version>0.1.0</version>
+	<creationDate>April 2011</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2011 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_AMBRA_TRIALWORKS_LOGIN</description>
+	
+	<files>
+		<filename plugin="trialworks_login">trialworks_login.php</filename>
+		<folder>trialworks_login</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_ambra_trialworks_login.ini</language>
+	</languages>
+	
+	<params>
+        <param name="odbcdriver" type="text"     label="ODBC CONNECTION" description="ODBC CONNECTION DESC" />
+        <param name="server"     type="text"     label="SQL SERVER"      description="SQL SERVER DESC" />     
+        <param name="user"       type="text"     label="USERNAME"        description="USERNAME DESC" />   
+        <param name="password"   type="password" label="PASSWORD"        description="PASSWORD DESC" />  
+        <param name="database"   type="text" 	 label="DATABASE NAME"   description="DATABASE NAME DESC" default="TWCustomers" />  
+    </params>	
+</install>

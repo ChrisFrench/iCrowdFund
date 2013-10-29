@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Display Author Ambra Avatars</name>
+	<version>1.1.0</version>
+	<creationDate>July 2011</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2011 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This plugin integrates Ambra with the core Content Manager</description>
+	
+	<files>
+		<filename plugin="ambra">ambra.php</filename>	
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_content_ambra.ini</language>
+	</languages>
+	
+	<params>
+        <param name="link_to_profile" 
+               type="radio" 
+               default="1" 
+               label="Link to Profile" 
+               description="Link to Profile">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+		<param name="itemid" type="text" size="10" default="" label="AMBRA Itemid" description="AMBRA Itemid"></param>
+		<param name="onafterdisplaytitle" 
+			   type="radio" 
+			   default="0" 
+			   label="Display After Title" 
+			   description="Display After Title">
+  			<option value="0">No</option>
+  			<option value="1">Yes</option>
+  		</param>
+		<param name="onpreparecontent" 
+			   type="radio" 
+			   default="1" 
+			   label="Display onPrepareContent" 
+			   description="Display onPrepareContent">
+  			<option value="0">No</option>
+  			<option value="1">Yes</option>
+  		</param>
+		<param name="sections" 
+			   type="textarea" 
+			   default=""
+			   label="Sections"
+			   rows="10" 
+			   cols="25" 
+			   description="Included Sections" />
+		<param name="categories" 
+			   type="textarea"
+			   default="" 
+			   label="Categories" 
+			   rows="10" 
+			   cols="25"
+			   description="Included Categories" />
+	</params>
+		
+</install>

@@ -1,0 +1,553 @@
+span#pointhistory_couponform_inputs
+{
+	float: right;
+}
+
+div.reset {
+    clear: both;
+}
+div.ambra_validation, div.ambra_validation img
+{
+    vertical-align: middle;
+}	
+span.validation-fail
+{
+	color: #FF0000;
+	padding-left: 5px;
+}
+
+span.validation-success
+{
+	color: #088A08;
+	padding-left: 5px;
+}
+/** LOGOUT FORM **/
+div#logout-message, div#login-message
+{
+    padding: 5px;
+    margin-bottom: 10px;	
+}
+
+/** REGISTRATION FORM **/
+div.form_item
+{
+	clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom: 2px;
+}
+
+div.form_key
+{
+	display: inline;
+	width: 20%;
+	float: left;
+    font-weight: bold;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+div.form_input
+{
+	display: inline;
+	width: 45%;
+	float: left;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+div.form_message
+{
+	display: inline;
+	width: 25%;
+	float: left;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+/** SELECT PROFILE TYPE LAYOUT **/
+div.selectprofile_icon
+{
+	float: left;
+	padding: 10px;
+	margin: 0 10px 0 0;
+    border: 1px solid #f0f0f0;
+    color: #666;
+    vertical-align: middle;
+}
+
+div.selectprofile_icon img
+{
+	max-width: 48px;
+	max-height: 48px;
+}	
+
+div.selectprofile_icon:hover 
+{
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #f9f9f9;
+    color: #0B55C4;
+}
+
+div.selectprofile_icon a:hover, div.selectprofile_icon img:hover  
+{
+	background: #f9f9f9;
+}
+
+div.selectprofile_item
+{
+	width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+}
+
+div.selectprofile_title
+{
+	font-weight: bold;
+	font-size: larger;
+}
+
+div.selectprofile_description
+{
+    padding: 0 0 0 10px;
+}
+
+div.selectprofile_description p
+{
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+/** USER PROFILE **/
+div#user_maincolumn
+{
+	display: inline;
+    float: left;
+    width: 72%;
+}
+
+div#user_rightcolumn
+{
+    text-align: center;
+    max-width: 25%;
+    width: 25%;
+    margin-left: 5px;
+    float: right;
+    padding-top: 10px;
+}
+
+div#user_profile_avatar
+{
+}
+
+div#user_profile_avatar img
+{
+    max-width: 128px;
+}
+
+div.profile_header
+{
+	padding: 5px 0 5px 0;
+	font-weight: bold;
+	font-size: larger;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/** PROFILE **/
+div#user_profile_edit_link
+{
+    padding: 5px;	
+}
+
+div.profile_item
+{
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom: 2px;
+}
+
+div.profile_key
+{
+    display: inline;
+    width: 30%;
+    float: left;
+    font-weight: bold;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+div.profile_value
+{
+    display: inline;
+    width: 60%;
+    float: left;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+/** SHARED **/
+table.adminlist {
+    padding: 5px;
+    width: 100%;
+    margin: 5px 0px 10px 0px;
+    border-collapse: collapse;
+}
+
+table.adminlist th {
+    white-space: nowrap;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table.adminlist thead th {
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+table.adminlist tbody th { 
+    font-weight: bold;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table.adminlist td {
+    border-bottom: 1px solid #e5e5e5; 
+    padding: 5px;
+    vertical-align: middle;
+}
+
+/** filter lines **/
+table.adminlist thead tr.filterline th {
+    background: none;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: bottom;
+}
+
+tr.filterline div.range {
+    width: 100%;
+    text-align: left;
+}
+
+tr.filterline div.range div.rangeline {
+    width: 100%;
+    white-space: nowrap;
+    padding-bottom: 2px;
+    text-align: right;
+}
+
+tr.filterline div.range div.rangeline span.label {
+    text-align: left;
+}
+
+tr.filterline div.range div.rangeline .input {
+    text-align: left;
+}
+
+/** common **/
+span.href {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: bold;
+}
+span.href:hover {
+    cursor:pointer;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+/** notes **/
+.note 
+{
+    background-color: #FFFFDD;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #DDDDBB;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.note_pink 
+{
+    background-color: #FDE8FD;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #FFCCCC;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.note_green 
+{
+    background-color: #EBF6DF;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #289728;
+    border-spacing: 0px;
+    border-collapse: collapse;  
+}
+
+/* tabs */
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+/** AdminList */
+table.adminlist th.title a, table.adminlist th.title a:hover {
+	/*color: #FFFFFF;*/
+}
+
+table.adminheading {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+}
+
+table.adminheading th {
+	width: 80%;
+	text-align: left;
+}
+
+span.href {
+	cursor:pointer;
+	color: #3F9273;
+	text-decoration:none;
+	padding-left: 10px;
+	font-size: 12px; 
+	font-weight: bold;
+}
+span.href:hover {
+	cursor:pointer;
+	color: #3F9273;
+	font-weight: bold;
+	text-decoration:underline;	
+}
+div.ambra_paddedl {
+	padding-left: 10px;
+}
+
+td.noborder {
+	border: none; 
+}
+
+table.userlist td.inv_right {
+	text-align:right;
+	padding-left: 1px;
+}
+table.userlist td.top {
+	vertical-align: top;
+}
+table.userlist td.topnowrap {
+	vertical-align: top;
+	white-space:nowrap;
+}
+
+table.userlist {
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 10px; 
+	border-collapse: collapse;
+}
+table.userlist th {
+	background-color: #e5e5e5;
+	white-space: nowrap;
+	vertical-align: top;
+	padding: 5px;	
+}
+
+table.userlist th.title {
+	width: 20%;
+	text-align:left;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+
+table.userlist th.data {
+	width: 75%;
+	text-align:right;
+	vertical-align:middle;
+}
+table.userlist th.fee {
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align:right;
+	vertical-align:middle;
+	white-space:nowrap;
+	width: 50px;
+}
+table.userlist th.amount {
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align:right;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+table.userlist td {
+	border-bottom: 1px solid #e5e5e5; 
+	padding: 5px;
+	vertical-align: top;
+}
+table.userlist td.title {
+	width: 20%;
+	text-align:left;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+table.userlist td.data {
+	width: 75%;
+	text-align:right;
+	vertical-align:middle;
+}
+table.userlist td.tooltip {
+	width: 5%;
+	text-align:right;
+	vertical-align:middle;
+}
+table.userlist td.headingnormal {
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align:left;
+	vertical-align:middle;
+	white-space:nowrap;
+	font-weight: bold;
+	text-decoration:underline;
+	border: none;
+}
+table.userlist td.headingamount {
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align:right;
+	vertical-align:middle;
+	white-space:nowrap;
+	font-weight: bold;
+	text-decoration:underline;
+	border: none;
+}
+table.userlist td.amount {
+	text-align:right;
+	vertical-align:middle;
+	white-space: nowrap;
+}
+table.userlist td.noborder {
+	border: none;
+	padding: 2px;
+	padding-top: 10px;
+}
+
+/** cpanel settings **/
+
+#cpanel div.icon {
+	text-align: center;
+	margin-right: 5px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#cpanel div.icon a {
+	display: block;
+	float: left;
+	border: 1px solid #f0f0f0;
+	height: 97px;
+	width: 108px;
+	color: #666;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+#cpanel div.icon a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #f9f9f9;
+	color: #0B55C4;
+}
+
+#cpanel img  { padding: 10px 0; margin: 0 auto; }
+#cpanel span { display: block; text-align: center; }
+
+fieldset {
+	margin-bottom: 10px;
+	border: 1px #ccc solid;
+	padding: 5px;
+	text-align: left;
+}
+
+fieldset p {  margin: 10px 0px;  }
+
+legend    {
+	color: #0B55C4;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+fieldset.adminform { border: 1px solid #ccc; margin: 0 10px 10px 10px; }
+
+/* pane-sliders  */
+.pane-sliders .title {
+	margin: 0 0 2px 0;
+	padding: 2px;
+	color: #666;
+	cursor: pointer;
+	/*font-size: medium;*/
+}
+
+.pane-sliders .panel   { border: 0px solid #ccc; margin-bottom: 3px;}
+
+.pane-sliders .panel h3 { background: #e5e5e5; color: #666}
+
+.pane-sliders .content { 
+	/* background: #f6f6f6; */ 
+}
+
+.pane-sliders .adminlist     { border: 0 none; }
+.pane-sliders .adminlist td  { border: 0 none; }
+
+.jpane-toggler span     { background: transparent url(../../images/arrow.png) 5px 50% no-repeat; padding-left: 20px;}
+.jpane-toggler-down span { background: transparent url(../../images/arrow_down.png) 5px 50% no-repeat; padding-left: 20px;}
+
+.jpane-toggler-down {  border-bottom: 0px solid #ccc; }

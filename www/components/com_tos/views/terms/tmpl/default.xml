@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AMBRA_USER_LAYOUT">
+		<message>
+			<![CDATA[COM_AMBRA_USER_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_tos/elements">
+			<field name="id" type="terms" section="com_tos" default="" label="Terms" description="The Terms and Conditions you would like to display" />
+		</fieldset>
+	</fields>
+</metadata>

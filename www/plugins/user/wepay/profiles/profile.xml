@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="wepay">
+		<fieldset name="wepay"
+			label="PLG_USER_WEPAY_SLIDER_LABEL">
+			<field
+				name="wepay_name"
+				type="text"
+				id="wepay_name"
+				label="PLG_USER_WEPAY_FIELD_NAME_LABEL" />
+		</fieldset>
+	</fields>
+</form>

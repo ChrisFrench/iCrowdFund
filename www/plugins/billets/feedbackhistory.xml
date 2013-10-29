@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="billets" method="upgrade">
+	<name>Billets - Feedback History</name>
+	<version>5.0.3-alpha</version>
+	<creationDate>April 2010</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_BILLETS_FEEDBACKHISTORY_DESC</description>
+	<files>
+		<filename plugin="feedbackhistory">feedbackhistory.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_billets_feedbackhistory.ini</language>
+	</languages>
+	<config>
+		<fields name="params"></fields>
+	</config>
+	<params></params>
+</install>

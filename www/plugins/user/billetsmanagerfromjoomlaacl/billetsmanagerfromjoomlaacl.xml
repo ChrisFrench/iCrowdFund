@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+	<name>User - Billets Manager from Joomla ACL</name>
+	<version>5.0.3-alpha</version>
+	<creationDate>April 2010</creationDate>
+	<author>Dioscouri Design</author>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://www.dioscouri.com</authorUrl>
+	<copyright>2010 Dioscouri.com</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_USER_BILLETSMANAGERFROMJOOMLAACL_DESC</description>
+	<files>
+		<filename plugin="billetsmanagerfromjoomlaacl">billetsmanagerfromjoomlaacl.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_user_billetsmanagerfromjoomlaacl.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="basic">
+				<field name="acl2cats" type="textarea" default="" label="ACL IDs to Category IDs" description="ACL IDs to Category IDs Desc" rows="5" cols="30" />
+				<field name="excluded_users" type="textarea" default="" label="Excluded UserIDs" description="Excluded UserIDs Desc" rows="5" cols="30" />
+			</fieldset>
+		</fields>
+	</config>
+	<params>
+		<param name="acl2cats" type="textarea" default="" label="ACL IDs to Category IDs" description="ACL IDs to Category IDs Desc" rows="5" cols="30" />
+		<param name="excluded_users" type="textarea" default="" label="Excluded UserIDs" description="Excluded UserIDs Desc" rows="5" cols="30" />
+	</params>
+</install>

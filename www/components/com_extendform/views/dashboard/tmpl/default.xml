@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="SAMPLE DASHBOARD DEFAULT LAYOUT">
+		<message>
+			<![CDATA[SAMPLE DASHBOARD DEFAULT LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>SAMPLE DASHBOARD DEFAULT LAYOUT</name>
+		<description>SAMPLE DASHBOARD DEFAULT LAYOUT DESC</description>
+        <!--
+        <url addpath="/administrator/components/com_extendform/elements">
+            <param name="filter_group" type="extendformgroup" section="com_extendform" default="" label="Select Group" description="A Tag Group" />
+            <param name="task" type="hidden" section="com_extendform" default="view" />
+        </url>
+        -->
+	</state>
+</metadata>

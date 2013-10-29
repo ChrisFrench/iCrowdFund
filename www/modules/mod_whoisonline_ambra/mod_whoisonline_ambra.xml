@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>Who is online</name>
+    <version>1.1.0</version>
+    <creationDate>July 2011</creationDate>
+    <author>Dioscouri.com</author>
+    <authorEmail>info@dioscouri.com</authorEmail>
+    <authorUrl>http://www.dioscouri.com</authorUrl>
+    <copyright>2011 Dioscouri.com</copyright>
+    <license>GNU General Public License</license>
+    <description>Displays logged in users and their avatars</description>
+
+    <files>
+        <filename module="mod_whoisonline_ambra">mod_whoisonline_ambra.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_whoisonline_ambra.ini</language>
+	</languages>
+
+	<params>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showmode" type="list" default="avatars" label="Display" description="Select what shall be shown">
+			<option value="num">Number of Guests and Members</option>
+			<option value="usernames">Usernames</option>
+			<option value="avatars">Avatars</option>
+			<option value="num_usernames">Number and Usernames</option>
+			<option value="num_avatars">Number and Avatars</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="display_urls" type="radio" default="1" label="Display Urls" description="Display Urls Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+		<param name="itemid2affix" type="text" default="" label="Itemid to Affix to URLs" description="Itemid to Affix to URLs DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="pic_size" type="radio" default="36" label="Avatar Picture Size" description="Avatar Picture Size">
+		  <option value="24">24px</option>
+		  <option value="30">30px</option>
+		  <option value="36">36px</option>
+		</param>
+	</params>
+</install>

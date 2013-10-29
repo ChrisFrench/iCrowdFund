@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu>
+   <link>
+        <name>Campaigns</name>
+        <url>index.php?option=com_wepay&#38;view=campaigns</url>
+   </link>
+   <link>
+        <name>Campaigns Category</name>
+        <url>index.php?option=com_categories&#38;extension=com_wepay.campaigns</url>
+   </link>
+</menu>

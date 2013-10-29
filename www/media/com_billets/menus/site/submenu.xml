@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu>
+   <link>
+       <name>COM_BILLETS_TICKET_LIST</name>
+       <url>index.php?option=com_billets&#38;view=tickets</url>
+   </link>
+   <link>
+       <name>COM_BILLETS_SUBMIT_NEW_TICKET</name>
+       <url>index.php?option=com_billets&#38;view=tickets&#38;task=add</url>
+   </link>
+</menu>

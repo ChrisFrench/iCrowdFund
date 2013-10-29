@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu>
+   <link>
+       <name>Emails</name>
+       <url>index.php?option=com_messagebottle&#38;view=emails</url>
+   </link>
+   <link>
+       <name>Scopes</name>
+       <url>index.php?option=com_messagebottle&#38;view=scopes</url>
+   </link>
+</menu>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" client="site" method="upgrade">
+	<name>Carousel Banner</name>
+	<author>TemplatePLazza</author>
+	<creationDate>December 13, 2011</creationDate>
+	<copyright>Copyright (C) 2007 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@templateplazza.com</authorEmail>
+	<authorUrl>www.templateplazza.com</authorUrl>
+	<version>2.0</version>
+	<description>MOD_CAROUSELBANNER_DESC</description>
+	<files>
+		<filename module="mod_carousel_banner">mod_carousel_banner.php</filename>
+		<filename>library/credits.txt</filename>
+		<filename>library/jquery-1.7.1.min.js</filename>
+		<filename>library/jquery.jcarousel.min.js</filename>
+		<filename>css/jquery.jcarousel.css</filename>
+		<filename>css/next-horizontal.png</filename>
+		<filename>css/prev-horizontal.png</filename>
+		<filename>css/skin.css</filename>
+		<filename>css/btn-twitter.png</filename>
+		<filename>css/btn-check-update.png</filename>
+		<filename>css/logo.png</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_carousel_banner.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_carousel_banner.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+				addfieldpath="/administrator/components/com_banners/models/fields">
+				
+				<field
+					name="loadJquery"
+					type="list"
+					default="1"
+					label="MOD_CAROUSELBANNER_LOADJQUERY_LABEL"
+					description="MOD_CAROUSELBANNER_LOADJQUERY_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">MOD_CAROUSELBANNER_VALUE_FROM_THISFILE</option>
+					<option
+						value="2">MOD_CAROUSELBANNER_VALUE_FROM_GOOGLE</option>
+				</field>
+				
+				<field name="count" type="integer" first="2" last="100" step="1" default="4" label="MOD_CAROUSELBANNER_COUNT_LABEL" description="MOD_CAROUSELBANNER_COUNT_DESC" />
+				<field name="cid" type="bannerclient" label="MOD_CAROUSELBANNER_CLIENT_LABEL" description="MOD_CAROUSELBANNER_CLIENT_DESC" />
+				<field name="catid" type="category" extension="com_banners" label="JCATEGORY" multiple="true" size="5" default="" description="MOD_CAROUSELBANNER_CATEG_DESC" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+				
+                <field name="width" type="text" default="468" label="MOD_CAROUSELBANNER_WIDTH_LABEL" description="MOD_CAROUSELBANNER_WIDTH_DESC" />
+                <field name="height" type="text" default="60" label="MOD_CAROUSELBANNER_HEIGHT_LABEL" description="MOD_CAROUSELBANNER_HEIGHT_DESC" />
+                
+				<field name="tag_search" type="radio" default="0" label="MOD_CAROUSELBANNER_STAG_LABEL" description="MOD_CAROUSELBANNER_STAG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ordering" type="list" default="0" label="MOD_CAROUSELBANNER_ORDERING_LABEL" description="MOD_CAROUSELBANNER_ORDERING_DESC">
+					<option value="0">MOD_CAROUSELBANNER_VALUE_ORDER</option>
+					<option value="random">MOD_CAROUSELBANNER_VALUE_RAND</option>
+				</field>
+				<field name="target" type="list" default="1" label="MOD_CAROUSELBANNER_TARGET_LABEL" description="MOD_CAROUSELBANNER_TARGET_DESC">
+					<option value="0">JBROWSERTARGET_PARENT</option>
+					<option value="1">JBROWSERTARGET_NEW</option>
+					<option value="2">JBROWSERTARGET_POPUP</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				
+                
+                
+                <field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
