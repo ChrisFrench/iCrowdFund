@@ -82,7 +82,9 @@ $options['num_decimals'] = 0;
 		
 	</div>
 	<div class="well well-small">
-	<h2><?php echo JText::_('COM_TIENDA_CROWDFUNDING_BACKERS'); ?></h2>
+	<h2 class="pull-left"><?php echo JText::_('COM_TIENDA_CROWDFUNDING_BACKERS'); ?></h2>
+	<a href="<?php echo JRoute::_( 'index.php?option=com_tienda&view=campaigns&id='.$this -> row -> campaign_id.'&task=csv&tmpl=component&format=raw' );?>" class="btn btn-primary pull-right">Download CSV</a>
+	<div class="clearfix"></div>
 	<ul class="thumbnails">
 		<?php foreach (@$item->backers as $backer)  : ?>
  			

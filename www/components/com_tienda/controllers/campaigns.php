@@ -489,17 +489,43 @@ class TiendaControllerCampaigns extends TiendaController {
 
 		$view = $this -> getView($this -> get('suffix'), 'csv');
 		$model = $this -> getModel($this -> get('suffix'));
+		$view -> set('csvHeader', true);
 		$model -> getId();
 		$row = $model -> getItem(true, false);
 
+
 		
 		if($row->user_id == JFactory::getUser()->id) {
-			$items = TiendaHelperCampaign::getCampaignOrders( $row -> campaign_id, 0 ); 		
+			$items = TiendaHelperCampaign::getCampaignOrders( $row -> campaign_id, 0 ); 
+			
+			$orders = array();
+			foreach ($items as $item) {
+			
+				// to change the headers and add items to the results do that here. 
+
+				$order = new stdClass();
+				$order->id = $item->order_id;
+				$order->customer_name = $item->user_name;
+				$order->email = $item->email;	
+				$order->billing_address_1 = $item->billing_address_1;
+				$order->billing_address_2 = $item->billing_address_2;
+				$order->billing_city = $item->billing_city;
+				$order->billing_zone_name = $item->billing_zone_name;
+				$order->billing_country_name = $item->billing_country_name;
+
+
+
+
+
+
+				$orders[] = $order;
+			}
+
 			// use the state
 			$this -> canAccess($user_id, $row -> user_id);
 			$view -> set('_doTask', true);
 			$view -> setModel($model, true);
-			$view -> assign('items', $items);
+			$view -> assign('items', $orders);
 		
 			$view -> set('hidemenu', false);
 		

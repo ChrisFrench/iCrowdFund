@@ -18,14 +18,14 @@ class TiendaViewCampaigns extends DSCViewCSV
 	
 
 	/**
-	 * Displays a layout file
-	 *
-	 * @param unknown_type $tpl
-	 * @return unknown_type
-	 */
-	public function display($tpl = null) 
-	{
-		   // Load the model
+     * Displays a layout file
+     *
+     * @param unknown_type $tpl
+     * @return unknown_type
+     */
+    public function display($tpl = null) 
+    {
+           // Load the model
        // $model = $this->getModel();
 
         $items = $this->items;
@@ -49,32 +49,39 @@ class TiendaViewCampaigns extends DSCViewCSV
             // Default CSV behaviour in case the template isn't there!
             if(empty($items)) return;
 
-            if($this->csvHeader) {
+          //  if($this->csvHeader) {
                 $item = array_pop($items);
                 $keys = get_object_vars($item);
+                //var_dump( $keys);
+                //die();
                 $items[] = $item;
                 reset($items);
 
                 $csv = array();
                 foreach($keys as $k => $v) {
-                    $csv[] = '"' . str_replace('"', '""', $k) . '"';
+                    
+                        $csv[] = '"' . str_replace('"', '""', $k) . '"';
+                    
                 }
                 echo implode(",", $csv) . "\r\n";
-            }
+            //}
 
             foreach($items as $item) {
                 $csv = array();
                 $keys = get_object_vars($item);
-                var_dump($item);
-                die();
+                
                 foreach($item as $k => $v) {
-                    $csv[] = '"' . str_replace('"', '""', $v) . '"';
+                     if(!is_object($v) && !is_array($v)) {
+                        $csv[] = '"' . str_replace('"', '""', $v) . '"';
+                    }
+                    
                 }
                 echo implode(",", $csv) . "\r\n";
             }
+
             return;
         }
-	}
+    }
 	
     
 }
