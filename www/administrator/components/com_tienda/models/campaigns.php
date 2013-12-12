@@ -92,7 +92,7 @@ class TiendaModelCampaigns extends TiendaModelBase {
         if ( strlen( $filter_completed ) )
         {	
         	$date = new JDate();
-        	$query->where( "tbl.completed_tasks = '1'" );
+        	//$query->where( "tbl.completed_tasks = '1'" );
 		$query->where( "tbl.fundingend_date <= '" . $date->toSql() . "'" );
         }
 
