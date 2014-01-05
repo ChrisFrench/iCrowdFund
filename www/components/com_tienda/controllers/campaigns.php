@@ -512,8 +512,8 @@ class TiendaControllerCampaigns extends TiendaController {
 				$order->billing_city = $item->billing_city;
 				$order->billing_zone_name = $item->billing_zone_name;
 				$order->billing_country_name = $item->billing_country_name;
-
-
+				$order->order_total ='$' . number_format($item->order_total, 2);
+	
 
 
 
